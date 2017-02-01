@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>File Metadata Microservice</title>
+	<link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+	<h1>File Metadata Microservice</h1>
+	<form method="post" action="fileData" enctype="multipart/form-data">
+		<label for="theFile">File to Inspect:</label>
+		<br>
+		<input type="file" name="theFile">
+		<br>
+		<button type="submit" class="btn btn-lg btn-primary"><i class="fa fa-upload" aria-hidden="true"></i></button>
+	</form>
+</body>
+<script src="https://use.fontawesome.com/21a9ccba03.js"></script>
+</html>
