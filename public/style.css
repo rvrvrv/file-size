@@ -2,7 +2,7 @@ body {
 	background: #d1fcd4;
 	background: -webkit-linear-gradient(315deg, #d1fcd4 0%, #4edb74 30%, #94fcca 100%) fixed;
 	background: linear-gradient(135deg, #d1fcd4 0%, #4edb74 30%, #94fcca 100%) fixed;
-	color: #4f4744;
+	color: #473744;
 	font-size: 24px;
 	font-family: tahoma;
 	text-align: center;
@@ -11,7 +11,7 @@ body {
 h1 {
 	font-size: 2.2em;
 	font-weight: 900;
-	text-shadow: 0 0 10px #ddd;
+	text-shadow: 0 0 10px #ccc;
 }
 
 form {
@@ -29,6 +29,7 @@ input {
 	max-width: 100%;
 }
 .btn {
+	margin-top: 2%;
 	outline: none !important;
 	font-size: 1.6em;
 	-webkit-transition: all 0.5s ease;
