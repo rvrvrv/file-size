@@ -1,43 +1,47 @@
 body {
-	background: url('https://i.imgsafe.org/c7d8f64b91.jpg') center center/cover no-repeat fixed #d1fcd4;
+	background: #d1fcd4;
 	color: #473744;
-	font-size: 24px;
-	font-family: tahoma;
+	font: bold 26px Tahoma;
 	text-align: center;
+	overflow: hidden;
 }
 
 h1 {
-	font-size: 2.2em;
-	font-weight: 900;
 	text-shadow: 0 0 15px #fff;
 }
 
 form {
+	background: #e1ffe4;
 	margin: 10% auto;
 	padding: 2%;
-	background: #d1fcd4;
-	background: rgba(209,252,212, 0.7);
-	max-width: 50%;
+	max-width: 90%;
 	box-shadow: 0 0 10px #4f4744;
 	border-radius: 35px;
 }
 
 input {
-	margin: 2% 0 -5% 0;
-	font-size: 0.8em;
+	margin: 5% auto;
+	border: 1px solid #000;
+	font-size: .8em;
 	max-width: 100%;
 }
 
-.btn {
-	margin-top: 2%;
-	outline: none !important;
-	font-size: 1.6em;
-	-webkit-transition: all 0.5s ease;
-	transition: all 0.5s ease;
+button {
+	background: #473744;
+	color: #fff;
+	font-size: 2em;
 	border-radius: 20%;
+	border: 0;
+	padding: 1% 2%;
+	cursor: pointer;
+	outline: none !important;
+	transition: background 0.5s ease;
 }
 
-.btn:focus,
-.btn:active {
-	outline: none !important;
+button:hover {
+	background: #362633;
+}
+
+button:active {
+	background: #352030;
 }
