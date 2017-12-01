@@ -14,13 +14,15 @@ app.use('/', express.static('./public'));
 
 // Upload file (as Buffer)
 app.post('/fileData', upload.single('theFile'), (req, res) => {
+  // If no file uploaded, return error message
+  if (!req.file) return res.json({ Error: 'No file uploaded' });
   // Return JSON with file name and size
-  res.json({
+  return res.json({
     'File Name': req.file.originalname,
     'Size (in bytes)': req.file.size
   });
 });
 
 app.listen(port, () => {
-  console.log(`Server is listening on port ${  port}`);
+  console.log(`Server is listening on port ${port}`);
 });
