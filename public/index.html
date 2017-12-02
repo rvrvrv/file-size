@@ -12,11 +12,11 @@
 	<h1>File Metadata Microservice</h1>
 	<form method="post" action="fileData" enctype="multipart/form-data">
 		<label for="theFile">File to Inspect:</label>
-		<br>
 		<input type="file" name="theFile" />
-		<br>
-		<button type="submit"><i class="fa fa-upload"></i></button>
+		<button id="cancelBtn" class="hidden"><i class="fa fa-4x fa-undo"></i></button>
+		<button id="uploadBtn" type="submit"><i class="fa fa-4x fa-upload"></i></button>
 	</form>
 </body>
 <script src="https://use.fontawesome.com/21a9ccba03.js"></script>
+<script src="main.js"></script>
 </html>

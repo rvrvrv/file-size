@@ -12,36 +12,69 @@ h1 {
 
 form {
 	background: #e1ffe4;
-	margin: 10% auto;
-	padding: 2%;
-	max-width: 90%;
 	box-shadow: 0 0 10px #4f4744;
 	border-radius: 35px;
+	margin: 10% auto;
+	max-width: 90%;
+	padding: 2%;
+}
+
+button, input, label {
+	display: block;
 }
 
 input {
-	margin: 5% auto;
-	border: 1px solid #000;
 	font-size: .8em;
+	margin: 5% auto;
 	max-width: 100%;
 }
 
+input.hidden, button.hidden {
+	height: 0;
+	margin: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+
+button.hidden {
+	margin: -1.5em 0;
+}
+
 button {
-	background: #473744;
+	background: #681b1b;
 	color: #fff;
-	font-size: 2em;
-	border-radius: 20%;
 	border: 0;
-	padding: 1% 2%;
+	border-radius: 20%;
+	margin: 2em auto;
+	padding: .6em .8em;
 	cursor: pointer;
+	opacity: 1;
 	outline: none !important;
-	transition: background 0.5s ease;
+	transition: background .5s, opacity 1s;
 }
 
 button:hover {
-	background: #362633;
+	background: #600;
 }
 
 button:active {
+	background: #400;
+}
+
+button[type='submit'] {
+	background: #473744;
+}
+
+button[type='submit']:hover {
+	background: #362633;
+}
+
+button[type='submit']:active {
 	background: #352030;
+}
+
+button:disabled {
+	background: #222522;
+	color: #ddd;
+	cursor: wait;
 }
