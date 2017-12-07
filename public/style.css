@@ -8,6 +8,7 @@ body {
 
 h1 {
 	line-height: .9em;
+	margin-bottom: 10vh;
 	text-shadow: 0 0 15px #fff;
 }
 
@@ -15,15 +16,10 @@ form {
 	background: #e1ffe4;
 	box-shadow: 0 0 10px #4f4744;
 	border-radius: 35px;
-<<<<<<< HEAD
 	height: 190px;
-	margin: 13vh auto;
+	margin: 0 auto;
 	max-width: 550px;
-=======
-	margin: 10% auto;
-	max-width: 85%;
->>>>>>> 79a19ce1c74b4e9fc42eaad5da25ca32103b9d7f
-	padding: 2%;
+	padding-bottom: 1em;
 }
 
 button, input, label {
@@ -37,7 +33,7 @@ input {
 	max-width: 100%;
 }
 
-input.hidden, button.hidden {
+.hidden {
 	height: 0;
 	margin: 0;
 	opacity: 0;
