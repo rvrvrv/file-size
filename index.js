@@ -2,8 +2,7 @@ const favicon = require('serve-favicon');
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 8080;
-// Handle multi-part / form data
-const multer = require('multer');
+const multer = require('multer'); // Handle multi-part / form data
 const storage = multer.memoryStorage(); // Store uploads as Buffer objects,
 const upload = multer({ storage }); // which prevents filling server space
 
@@ -23,6 +22,4 @@ app.post('/fileData', upload.single('theFile'), (req, res) => {
   });
 });
 
-app.listen(port, () => {
-  console.log(`Server is listening on port ${port}`);
-});
+app.listen(port, () => console.log(`Server is listening on port ${port}`));
