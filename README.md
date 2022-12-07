@@ -11,18 +11,18 @@ File Metadata Microservice Project for FreeCodeCamp
 
 Upload file from the UI at the root.
 ```text
-https://file-size-rv.herokuapp.com
+https://file-size-rv.onrender.com
 ```
 
 ## Example query output:
 
 ```text
-https://file-size-rv.herokuapp.com/fileData
+https://file-size-rv.onrender.com/fileData
 ```
 
-```js
+```json
 {
-File Name: "ring.wav",
-Size (in bytes): 129496
+  "File Name": "ring.wav",
+  "Size (in bytes)": 129496
 }
 ```
